@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let priceValue = 1000
+        print(priceValue.priceString1 ?? "-" + "円")
+        print(priceValue.priceString2 + "円")
     }
 }
 
