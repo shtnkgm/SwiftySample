@@ -1,0 +1,11 @@
+{
+    "identifier": "0001",
+    "person_name": {
+        "first_name": "Shota",
+        "last_name": "Nakagami"
+    },
+    "address": {
+        "postal_code": "1028282",
+        "prefecture": "東京都"
+    }
+}
