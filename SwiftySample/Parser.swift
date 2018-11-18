@@ -9,6 +9,13 @@
 import Foundation
 import SwiftyJSON
 
+/*
+ 仕様
+  - identifier、personNameは必ず存在する
+  - addressは存在しない場合がある
+  - addressが存在する場合はpostalCodeとprefectureがセットで必ず存在する
+ */
+
 // Bad
 struct User1 {
     var identifier: String?
