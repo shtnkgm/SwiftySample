@@ -13,6 +13,8 @@
 		9724EB3121A1945C00124675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9724EB3021A1945C00124675 /* Assets.xcassets */; };
 		9724EB3421A1945C00124675 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9724EB3221A1945C00124675 /* LaunchScreen.storyboard */; };
 		9724EB3F21A1945C00124675 /* SwiftySampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB3E21A1945C00124675 /* SwiftySampleTests.swift */; };
+		9724EB4A21A1983A00124675 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB4921A1983A00124675 /* Int+.swift */; };
+		9724EB4C21A1997200124675 /* Int+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB4B21A1997200124675 /* Int+Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9724EB3A21A1945C00124675 /* SwiftySampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftySampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9724EB3E21A1945C00124675 /* SwiftySampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftySampleTests.swift; sourceTree = "<group>"; };
 		9724EB4021A1945C00124675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9724EB4921A1983A00124675 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		9724EB4B21A1997200124675 /* Int+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Tests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 			children = (
 				9724EB2921A1945A00124675 /* AppDelegate.swift */,
 				9724EB2B21A1945A00124675 /* ViewController.swift */,
+				9724EB4921A1983A00124675 /* Int+.swift */,
 				9724EB2D21A1945A00124675 /* Main.storyboard */,
 				9724EB3021A1945C00124675 /* Assets.xcassets */,
 				9724EB3221A1945C00124675 /* LaunchScreen.storyboard */,
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				9724EB3E21A1945C00124675 /* SwiftySampleTests.swift */,
+				9724EB4B21A1997200124675 /* Int+Tests.swift */,
 				9724EB4021A1945C00124675 /* Info.plist */,
 			);
 			path = SwiftySampleTests;
@@ -199,6 +205,7 @@
 			files = (
 				9724EB2C21A1945A00124675 /* ViewController.swift in Sources */,
 				9724EB2A21A1945A00124675 /* AppDelegate.swift in Sources */,
+				9724EB4A21A1983A00124675 /* Int+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9724EB3F21A1945C00124675 /* SwiftySampleTests.swift in Sources */,
+				9724EB4C21A1997200124675 /* Int+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
