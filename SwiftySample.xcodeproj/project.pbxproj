@@ -21,6 +21,8 @@
 		9724EB5221A1A6B500124675 /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB5121A1A6B500124675 /* ParserTests.swift */; };
 		9724EB5521A1A8DA00124675 /* User.json in Resources */ = {isa = PBXBuildFile; fileRef = 9724EB4F21A1A53700124675 /* User.json */; };
 		9724EB5721A1B2A500124675 /* UserWithoutAddress.json in Resources */ = {isa = PBXBuildFile; fileRef = 9724EB5621A1B2A500124675 /* UserWithoutAddress.json */; };
+		9724EB5921A1B82E00124675 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB5821A1B82E00124675 /* APIClient.swift */; };
+		9724EB5B21A1B9AF00124675 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9724EB5A21A1B9AF00124675 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9724EB4F21A1A53700124675 /* User.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = User.json; sourceTree = "<group>"; };
 		9724EB5121A1A6B500124675 /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		9724EB5621A1B2A500124675 /* UserWithoutAddress.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserWithoutAddress.json; sourceTree = "<group>"; };
+		9724EB5821A1B82E00124675 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9724EB5A21A1B9AF00124675 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		EC659064F46E658337F3D5D6 /* Pods-SwiftySampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftySampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftySampleTests/Pods-SwiftySampleTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,8 @@
 				9724EB2921A1945A00124675 /* AppDelegate.swift */,
 				9724EB2B21A1945A00124675 /* ViewController.swift */,
 				9724EB4D21A19E9000124675 /* Parser.swift */,
+				9724EB5821A1B82E00124675 /* APIClient.swift */,
+				9724EB5A21A1B9AF00124675 /* Result.swift */,
 				9724EB4921A1983A00124675 /* Int+.swift */,
 				9724EB2D21A1945A00124675 /* Main.storyboard */,
 				9724EB3021A1945C00124675 /* Assets.xcassets */,
@@ -321,9 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9724EB5B21A1B9AF00124675 /* Result.swift in Sources */,
 				9724EB4E21A19E9000124675 /* Parser.swift in Sources */,
 				9724EB2C21A1945A00124675 /* ViewController.swift in Sources */,
 				9724EB2A21A1945A00124675 /* AppDelegate.swift in Sources */,
+				9724EB5921A1B82E00124675 /* APIClient.swift in Sources */,
 				9724EB4A21A1983A00124675 /* Int+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
