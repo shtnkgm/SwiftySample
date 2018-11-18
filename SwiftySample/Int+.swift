@@ -9,6 +9,7 @@
 import Foundation
 
 extension Int {
+    // Bad
     var priceString1: String? {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
@@ -17,6 +18,7 @@ extension Int {
         return formatter.string(from: NSNumber(integerLiteral: self))
     }
     
+    // Good
     var priceString2: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .decimal
