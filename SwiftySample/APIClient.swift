@@ -17,16 +17,16 @@ enum APIClientError: Error {
 struct APIClient1 {
     func request(completion: @escaping (_ value: Int?, _ error: Error?) -> Void) {
         DispatchQueue.main.async {
-            completion(0, nil)
+            completion(1000, nil)
         }
     }
 }
 
-// Bad
+// Good
 struct APIClient2 {
     func request(completion: @escaping (_ result: Result<Int, APIClientError>) -> Void) {
         DispatchQueue.main.async {
-            completion(.success(0))
+            completion(.success(1000))
         }
     }
 }
