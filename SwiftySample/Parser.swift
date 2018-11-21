@@ -99,7 +99,46 @@ struct User3 {
 }
 
 // Good
-struct User4: Codable {
+struct User4 {
+    let identifier: String
+    let personName: PersonName
+    let address: Address?
+    
+    struct PersonName {
+        let firstName: String
+        let lastName: String
+        
+        init?(json: JSON) {
+            guard let firstName = json["person_name"]["first_name"].string,
+                let lastName = json["person_name"]["last_name"].string else { return nil }
+            self.firstName = firstName
+            self.lastName = lastName
+        }
+    }
+    
+    struct Address {
+        let postalCode: String
+        let prefecture: String
+        
+        init?(json: JSON) {
+            guard let postalCode = json["address"]["postal_code"].string,
+                let prefecture = json["address"]["prefecture"].string else { return nil }
+            self.postalCode = postalCode
+            self.prefecture = prefecture
+        }
+    }
+    
+    init?(json: JSON) {
+        guard let identifier = json["identifier"].string,
+            let personName = PersonName(json: json["person_name"]) else { return nil }
+        self.identifier = identifier
+        self.personName = personName
+        self.address = Address(json: json["address"])
+    }
+}
+
+// Good
+struct User5: Codable {
     let identifier: String
     let personName: PersonName
     let address: Address?
@@ -117,7 +156,7 @@ struct User4: Codable {
     init?(jsonData: Data) {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        guard let user = try? decoder.decode(User4.self, from: jsonData) else { return nil }
+        guard let user = try? decoder.decode(User5.self, from: jsonData) else { return nil }
         self = user
     }
 }

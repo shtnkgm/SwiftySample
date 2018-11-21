@@ -73,14 +73,30 @@ class ParserTests: XCTestCase {
     }
     
     func test_user4() {
-        let user = User4(jsonData: jsonData(fileName: "User"))
+        let user = User4(json: json(fileName: "User"))
         XCTAssertEqual(user?.identifier, "0001")
         XCTAssertEqual(user?.personName.firstName, "Shota")
         XCTAssertEqual(user?.personName.lastName, "Nakagami")
         XCTAssertEqual(user?.address?.postalCode, "1028282")
         XCTAssertEqual(user?.address?.prefecture, "東京都")
         
-        let userWithoutAddress = User4(jsonData: jsonData(fileName: "UserWithoutAddress"))
+        let userWithoutAddress = User3(json: json(fileName: "UserWithoutAddress"))
+        XCTAssertEqual(userWithoutAddress?.identifier, "0001")
+        XCTAssertEqual(userWithoutAddress?.personName.firstName, "Shota")
+        XCTAssertEqual(userWithoutAddress?.personName.lastName, "Nakagami")
+        XCTAssertEqual(userWithoutAddress?.address?.postalCode, nil)
+        XCTAssertEqual(userWithoutAddress?.address?.prefecture, nil)
+    }
+    
+    func test_user5() {
+        let user = User5(jsonData: jsonData(fileName: "User"))
+        XCTAssertEqual(user?.identifier, "0001")
+        XCTAssertEqual(user?.personName.firstName, "Shota")
+        XCTAssertEqual(user?.personName.lastName, "Nakagami")
+        XCTAssertEqual(user?.address?.postalCode, "1028282")
+        XCTAssertEqual(user?.address?.prefecture, "東京都")
+        
+        let userWithoutAddress = User5(jsonData: jsonData(fileName: "UserWithoutAddress"))
         XCTAssertEqual(userWithoutAddress?.identifier, "0001")
         XCTAssertEqual(userWithoutAddress?.personName.firstName, "Shota")
         XCTAssertEqual(userWithoutAddress?.personName.lastName, "Nakagami")
